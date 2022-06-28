@@ -1,0 +1,29 @@
+<h1>EMPLOYEES</h1>
+
+
+  <div class="container"  *ngFor="let person of people">
+    <div class="card"*ngIf="person.id%2==0" >
+
+          <div class="title">
+            {{person.name}}
+          </div>
+          <div class="info">
+            <p>
+              Employee No. {{ person.id }}
+            </p>
+            <p>
+              USERNAME: {{person.username}}
+            </p><p>
+              EMAIL: {{person.email}}
+            </p>
+            <p>
+              PHONE: {{person.phone}}
+            </p>
+            <p>
+              WEBSITE: {{person.website}}
+            </p>
+          </div>
+
+    </div>
+  </div>
+
